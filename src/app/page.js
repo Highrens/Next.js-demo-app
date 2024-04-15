@@ -12,7 +12,7 @@ export default function Home(props) {
     console.log(count);
   }
   function removeNumber() {
-    if (count == 0) return;s
+    if (count == 0) return;
     setCount(count - 1);
     console.log(count);
   }
