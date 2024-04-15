@@ -1,0 +1,24 @@
+.Random {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Random__dice {
+    margin-top: 40px;
+    width: 64px;
+    height: auto;
+    animation: rotate .5s linear;
+
+    
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(720deg);
+    }
+}
