@@ -3,7 +3,8 @@ import Header from "@/Header/header";
 import "./page.css";
 import Random from "@/Random/Random";
 import { useState } from "react";
-
+import { YMInitializer } from 'react-yandex-metrika';
+ 
 export default function Home(props) {
   const [count, setCount] = useState(3);
 
@@ -28,6 +29,7 @@ export default function Home(props) {
 
   return (
     <main className="main">
+       <YMInitializer accounts={[15825571]} />
       <Header />
       <div className="main__container">
         <div className="main__button-container">
