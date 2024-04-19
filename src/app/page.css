@@ -62,6 +62,15 @@
   box-shadow: inset 16px 16px 13px -8px rgba(77,77,77,0.58), inset -8px -8px 13px -8px rgba(176, 176, 176, 0.58);;
 }
 
+.main__reroll-button{
+  padding: 20px;
+  width: 85%;
+  border-radius: 30px;
+  border: none;
+  box-shadow: inset 16px 16px 13px -8px rgba(77,77,77,0.58), inset -8px -8px 13px -8px rgba(176, 176, 176, 0.58);;
+
+}
+
 .main__plus-button:hover {
   background-color: rgb(81, 81, 81);
 }

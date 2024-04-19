@@ -17,6 +17,15 @@ export default function Home(props) {
     console.log(count);
   }
 
+  function ReRoll() {
+    var temp = count;
+    setCount(0);
+    setTimeout(() => {
+      setCount(temp);
+    }, 1);
+
+  }
+
   return (
     <main className="main">
       <Header />
@@ -30,6 +39,7 @@ export default function Home(props) {
             +
           </button>
         </div>
+        <button className="main__reroll-button" onClick={ReRoll}>Reroll</button>
         <div className="main__random_container">
           {Array(count)
             .fill()
