@@ -6,9 +6,9 @@ export default function Header() {
   return (
     <header className="header">
       <h1 className="header__title">
-        DiceDungeon
+        Dices for you
       </h1>
-      <Image src={Dice} alt='header__dice_icon'></Image>
+      <Image className="header__dice_icon" src={Dice} alt='header__dice_icon'></Image>
     </header>
   );
 }

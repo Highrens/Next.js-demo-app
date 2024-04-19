@@ -16,3 +16,8 @@
     font-weight: 400;
     font-family: "GaliverSans";
 }
+
+.header__dice_icon{
+    width: 35px;
+    height: auto;
+}

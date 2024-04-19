@@ -5,7 +5,7 @@ import Random from "@/Random/Random";
 import { useState } from "react";
 
 export default function Home(props) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(3);
 
   function addNumber() {
     setCount(count + 1);
@@ -21,20 +21,22 @@ export default function Home(props) {
     <main className="main">
       <Header />
       <div className="main__container">
-        <div>
+        <div className="main__button-container">
           <button className="main__plus-button" onClick={removeNumber}>
             -
           </button>
+          <h1>{count}</h1>
           <button className="main__plus-button" onClick={addNumber}>
             +
           </button>
         </div>
-        <h2 className="main__text">Welcome to DiceDungeon!</h2>
-        {Array(count)
-          .fill()
-          .map((_, index) => (
-            <div key={index}>{<Random />}</div>
-          ))}
+        <div className="main__random_container">
+          {Array(count)
+            .fill()
+            .map((_, index) => (
+              <Random key={index} />
+            ))}
+        </div>
       </div>
     </main>
   );

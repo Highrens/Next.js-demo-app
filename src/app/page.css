@@ -17,6 +17,7 @@
 }
 
 .main__container {
+  width: min-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,12 +28,25 @@
   box-shadow: 4px 4px 31px 5px rgba(0, 0, 0, 0.25);
 }
 
+.main__button-container {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+}
+
 .main__text {
 
   color: #fff;
   font-style: normal;
   font-weight: 400;
   font-family: "GaliverSans";
+}
+
+.main__random_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .main__plus-button {
@@ -45,6 +59,7 @@
   font-family: "GaliverSans";
   font-size: 50px;
   transition: .3s;
+  box-shadow: inset 16px 16px 13px -8px rgba(77,77,77,0.58), inset -8px -8px 13px -8px rgba(176, 176, 176, 0.58);;
 }
 
 .main__plus-button:hover {

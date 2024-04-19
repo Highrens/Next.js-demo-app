@@ -25,8 +25,6 @@ export default function Random() {
   }, []);
 
   return (
-    <div className="Random">
-      <Image src={dices[imageSrc]} alt="dice" className="Random__dice"></Image>
-    </div>
+    <Image src={dices[imageSrc]} alt="dice" className="Random__dice"></Image>
   );
 }
