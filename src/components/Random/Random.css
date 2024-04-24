@@ -10,8 +10,9 @@
     height: auto;
     animation: rotate .5s linear;
 
-    
+
 }
+
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -21,3 +22,10 @@
         transform: rotate(720deg);
     }
 }
+
+@media screen and (max-width: 555px) {
+    .Random__dice {
+        width: 13vw;
+    }
+}
+

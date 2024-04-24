@@ -1,5 +1,6 @@
 .header {
-    width: 80%;
+    width: 90%;
+    max-width: 800px;
     margin-top: 10px;
     background-color: #b9b9b9;
     padding: 10px 20px;
@@ -14,7 +15,8 @@
 }
 
 .header__title {
-    padding-right: 30px;
+    display: flex;
+    font-size: clamp(1rem, 0.714rem + 1.429vw, 2rem);
     color: #fff;
     font-style: normal;
     font-weight: 400;
@@ -31,4 +33,10 @@
 
 .header_nav-link{
     padding-left: 10px;
+}
+
+@media screen {
+    .header {
+
+    }
 }

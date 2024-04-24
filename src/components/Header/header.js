@@ -22,9 +22,6 @@ export default function Header() {
           <Link className="header_nav-link" href={"/games"}>
             Игры
           </Link>
-          <Link className="header_nav-link" href={"/games"}>
-            link2
-          </Link>
         </ul>
       </nav>
     </header>
