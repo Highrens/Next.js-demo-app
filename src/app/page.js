@@ -1,55 +1,17 @@
 "use client";
-import Header from "@/Header/header";
+import Header from "@/components/Header/header";
 import "./page.css";
-import Random from "@/Random/Random";
+import { YMInitializer } from "react-yandex-metrika";
 import { useState } from "react";
-import { YMInitializer } from 'react-yandex-metrika';
- 
-export default function Home(props) {
-  const [count, setCount] = useState(3);
+import Random_Container from "@/components/Random_Container/Random_Container";
 
-  function addNumber() {
-    setCount(count + 1);
-    console.log(count);
-  }
-  function removeNumber() {
-    if (count == 0) return;
-    setCount(count - 1);
-    console.log(count);
-  }
-
-  function ReRoll() {
-    var temp = count;
-    setCount(0);
-    setTimeout(() => {
-      setCount(temp);
-    }, 1);
-
-  }
+export default function Home() {
 
   return (
     <main className="main">
-       <YMInitializer accounts={[15825571]} />
+      <YMInitializer accounts={[15825571]} />
       <Header />
-      <div className="main__container">
-        <div className="main__button-container">
-          <button className="main__plus-button" onClick={removeNumber}>
-            -
-          </button>
-          <h1>{count}</h1>
-          <button className="main__plus-button" onClick={addNumber}>
-            +
-          </button>
-        </div>
-        <button className="main__reroll-button" onClick={ReRoll}>Reroll</button>
-        <div className="main__random_container">
-          {Array(count)
-            .fill()
-            .map((_, index) => (
-              <Random key={index} />
-            ))}
-        </div>
-      </div>
+      <Random_Container />
     </main>
   );
 }

@@ -17,11 +17,13 @@ function randomIntFromInterval(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-export default function Random() {
-  const [imageSrc, setImageSrc] = useState(1);
+export default function Random(props) {
+  const [imageSrc, setImageSrc] = useState(0);
 
   useEffect(() => {
-    setImageSrc(randomIntFromInterval(0, 5));
+    const diceNumber = randomIntFromInterval(0, 5);
+    setImageSrc(diceNumber);
+    props.sumFunc(diceNumber, props.number);
   }, []);
 
   return (

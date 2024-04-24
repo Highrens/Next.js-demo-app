@@ -1,0 +1,13 @@
+.RandomArray_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  align-items: center;
+}
+
+.RandomArray__sum {
+  font-size: 30px;
+  padding: 5px;
+}

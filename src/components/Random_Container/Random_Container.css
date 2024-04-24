@@ -1,0 +1,68 @@
+.main__container {
+    width: 80%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: rgb(34, 34, 34);
+    box-shadow: 0 0 0 1px rgba(0, 118, 148, 1);
+    ;
+  }
+  
+  .main__button-container {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+  }
+  
+  .main__text {
+  
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "GaliverSans";
+  }  
+
+.main__plus-button {
+    margin: 30px;
+    border-radius: 30px;
+    box-shadow: none;
+    border: none;
+    height: 100px;
+    width: 100px;
+    font-family: "GaliverSans";
+    font-size: 50px;
+    transition: .3s;
+  
+    background-color: rgb(34, 34, 34);
+    box-shadow: 0 0 0 1px rgba(0, 118, 148, 1);
+    ;
+  }
+  
+  .main__reroll-button {
+    padding: 20px;
+    width: 85%;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    border: none;
+  
+    background-color: rgb(34, 34, 34);
+    box-shadow: 0 0 0 1px rgba(0, 118, 148, 1);
+    font-family: "GaliverSans";
+  }
+  
+  .main__reroll-button:hover {
+  
+    background-color: rgb(55, 55, 55);
+  }
+  
+  .main__plus-button:hover {
+    background-color: rgb(55, 55, 55);
+  }
+  
+  .main__plus-button:active {
+    background-color: black;
+  }
